@@ -1,0 +1,15 @@
+version: "3.2"
+services:
+  rabbitmq:
+    extends:
+      file: rabbitmq/docker-compose.yml
+      service: rabbitmq
+  postgresql-db:
+    extends:
+      file: postgresql/docker-compose.yml
+      service: postgresql-db
+
+networks:
+  default:
+    name: sandbox-test-task
+    driver: bridge

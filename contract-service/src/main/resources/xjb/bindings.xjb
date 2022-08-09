@@ -1,0 +1,14 @@
+<jxb:bindings
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+        xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+        version="1.0">
+    <jxb:globalBindings generateIsSetMethod="true" fixedAttributeAsConstantProperty="true">
+        <xjc:serializable/>
+    </jxb:globalBindings>
+    <jxb:bindings schemaLocation="../xsd/ContractService.xsd">
+        <jxb:bindings node="//xs:element[@name='Status']/xs:simpleType">
+            <jxb:typesafeEnumClass name="Status"/>
+        </jxb:bindings>
+    </jxb:bindings>
+</jxb:bindings>

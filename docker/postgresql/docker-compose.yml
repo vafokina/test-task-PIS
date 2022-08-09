@@ -1,0 +1,10 @@
+version: "3.2"
+services:
+  postgresql-db:
+    image: postgres:13
+    ports:
+      - 5430:5432
+    environment:
+      POSTGRES_DB: database
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin

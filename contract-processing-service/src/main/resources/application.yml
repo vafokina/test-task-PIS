@@ -1,0 +1,22 @@
+server:
+  port: 8283
+logging.level.org.springframework: DEBUG
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5670
+    username: admin
+    password: admin
+  datasource:
+    url: jdbc:postgresql://localhost:5430/database
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    generate-ddl: true
+
+application:
+  queues:
+    contractCreate: contract.create
+    contractEvent: contract.event

@@ -1,0 +1,14 @@
+server:
+  port: 8284
+logging.level.org.springframework: DEBUG
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5670
+    username: admin
+    password: admin
+
+application:
+  queues:
+    contractCreate: contract.create
