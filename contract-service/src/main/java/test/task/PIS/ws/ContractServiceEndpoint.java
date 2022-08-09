@@ -13,7 +13,6 @@ import test.task.PIS.xsd.CreateNewContractResponse;
 public class ContractServiceEndpoint {
 
     private static final String NAMESPACE_URI = "http://xmlns.esb.ru/ext/ContractService/";
-    private static final String EXAMPLE_NAMESPACE_URI = "http://tempuri.org/PurchaseOrderSchema.xsd";
 
     private final ContractService contractService;
 
